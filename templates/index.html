@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Risk Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Heart Disease Risk Predictor</h1>
+
+<form id="riskForm">
+    <input type="number" name="age" placeholder="Age" required>
+    <select name="gender">
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+    </select>
+    <input type="number" name="systolic_bp" placeholder="Systolic BP" required>
+    <input type="number" name="diastolic_bp" placeholder="Diastolic BP" required>
+    <input type="number" name="blood_sugar" placeholder="Blood Sugar" required>
+    <input type="number" name="bmi" placeholder="BMI" required>
+
+    <select name="smoking">
+        <option value="0">Non-Smoker</option>
+        <option value="1">Smoker</option>
+    </select>
+
+    <select name="alcohol">
+        <option value="0">No Alcohol</option>
+        <option value="1">Alcohol</option>
+    </select>
+
+    <select name="urban">
+        <option value="0">Rural</option>
+        <option value="1">Urban</option>
+    </select>
+
+    <button type="submit">Predict Risk</button>
+</form>
+
+<div id="result"></div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
